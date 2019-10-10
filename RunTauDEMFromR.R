@@ -23,9 +23,9 @@
 
 #      set the working directory
 
+#setwd("C:\\Felipe\\PIHM-CYCLES\\PIHM\\TauDEM\\TauDEM\\HalfMoon")
 
-setwd('C:/Felipe/Students Projects/Stephanie/HalfmoonWatershed/MM_PHIM_inputs') ;   #  setwd(RevisedOutputs.dir)   ;
-
+setwd("C:\\Felipe\\PIHM-CYCLES\\PIHM\\TauDEM\\TauDEM\\LoganDemo\\Logan")
 
 # Install the packages that are needed #
 
@@ -42,9 +42,9 @@ setwd('C:/Felipe/Students Projects/Stephanie/HalfmoonWatershed/MM_PHIM_inputs') 
 # install rgdal
 # install raster
 # install shapefiles
-install.packages("rgdal")
-install.packages("raster")
-install.packages("shapefiles")
+# install.packages("rgdal")
+# install.packages("raster")
+# install.packages("shapefiles")
 
 # This also assumes that MPICH2 is properly installed on your machine and that TauDEM command line executables exist
 # MPICH2.  Obtain from http://www.mcs.anl.gov/research/projects/mpich2/
@@ -61,7 +61,8 @@ library(raster)
 library(shapefiles)
 
 # Set working directory to your location
-setwd("C:/Users/dtarb/Scratch/Logan")
+#setwd("C:/Users/dtarb/Scratch/Logan")
+setwd("C:\\Felipe\\PIHM-CYCLES\\PIHM\\TauDEM\\TauDEM\\LoganDemo\\Logan")
 
 z=raster("logan.tif")
 plot(z)
